@@ -85,15 +85,27 @@ p{
     background-color: #005762;
     justify-content: flex-start;
     gap:10px;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
 }
 .gears nav{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
     flex: 1;
 }
-
+.gears ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    list-style: none; /* Remove default list style */
+    width: 100%; /* Ensure ul takes full width */
+}
 .gears li{
-    display: inline-flex;
     list-style: none;
-
 }
 .gears a{
     border: 3px solid;
@@ -101,10 +113,30 @@ p{
     color: black;
     background-color: #00f7df;
     border-radius: 5px;
-    padding: 5px;
-    padding: 10px;
+    padding: 7px;
 }
 
 .gears a:hover {
     background-color: #00b1ad;
+}
+
+@media (max-width:480px){
+    .right{
+        float: right;
+        margin-left: 10px;
+        width: 60%;
+    }
+
+    .left{
+        float: left;
+        margin-right: 10px;
+        width: 60%;
+    }
+
+    .center-image{
+        border: none;
+        width: 10%;
+        height: 10%;
+        padding-top: 10px;
+    }
 }
